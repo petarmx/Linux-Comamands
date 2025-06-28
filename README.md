@@ -1,5 +1,4 @@
 # 🔒 Linux File Permission Hardening Project  
-*Cybersecurity Portfolio | 28th June 2025*
 
 ---
 
