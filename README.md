@@ -1,4 +1,3 @@
-text
 # 🔒 Linux File Permission Hardening Project  
 *Cybersecurity Portfolio | 28th June 2025*
 
@@ -19,7 +18,6 @@ As a security professional for a research organization, I audited and modified f
 -rw--w---- 1 researcher2 research_team .project_x.txt
 drwx--x--- 2 researcher2 research_team drafts
 
-text
 
 ### 🔍 Permission Analysis
 | File/Directory       | Issues Identified                          |
@@ -44,19 +42,16 @@ chmod g-w,o-rwx project_r.txt project_t.txt
 Allow group read (remove write) from project_m.txt
 chmod g+r-w project_m.txt
 
-text
 
 ### 2. Hidden File Securing
 Adjust .project_x.txt to secure standards
 chmod g+r-w,o-rwx .project_x.txt
 
-text
 
 ### 3. Directory Permission Fix
 Enable secure collaboration in drafts
 chmod g+rx drafts
 
-text
 
 ---
 
@@ -68,7 +63,6 @@ text
 -rw-r----- 1 researcher2 research_team .project_x.txt
 drwxr-x--- 2 researcher2 research_team drafts
 
-text
 
 ---
 
@@ -89,13 +83,6 @@ text
 - **Group privileges restricted:** Read-only access to project files
 - **Hidden files secured:** `.project_x.txt` now follows standard protocols
 - **Directory safety:** `drafts` allows traversal without modification rights
-
----
-
-## 💡 Lessons Learned
-
-> "This project demonstrated how granular permission control acts as a critical defense layer. By auditing and modifying Linux file permissions, we transformed an overly permissive research environment into a least-privilege model without disrupting legitimate collaboration."  
-> *— Security Team Reflection*
 
 ---
 
